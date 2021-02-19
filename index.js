@@ -25,8 +25,14 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(number) {
+  let accum = 0;
+  for (let i = 0; i < number + 1; i++) {
+    accum += number;
+    number--;
+  }
+  accum += 1; //get the last 1 from the sequence
+  return accum;
 }
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -101,8 +107,15 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-function animalNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function animalNames(animals) {
+  const result = animals.map((element) => {
+    return { name: element.animal_name, scientific: element.scientific_name };
+  });
+  let array = [];
+  result.forEach((element) => {
+    array.push(`name: ${element.name}, scientific: ${element.scientific}`);
+  });
+  return array;
 }
 
 /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
