@@ -124,8 +124,9 @@ function animalNames(animals) {
   For example: ['jackal, asiatic', .....]
   */
 
-function lowerCaseNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lowerCaseNames(animals) {
+  const result = animals.map((element) => element.animal_name.toLowerCase());
+  return result;
 }
 
 /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
