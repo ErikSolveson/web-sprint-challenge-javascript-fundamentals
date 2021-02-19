@@ -43,10 +43,10 @@ A. A higher order function is what is used to call a callback function. This is 
 
 A.
 
-- Explicit: This usage of 'this' happens when
-- Implicit: This usage of 'this' happens when
-- Global: This usage of 'this' happens when
-- New: This usage of 'this' happens when
+- Explicit: This usage of 'this' happens when you're using the .call or .apply methods and this is explicitly defined to the right of the methods in ()
+- Implicit: This usage of 'this' happens when you're using this to the left of a dot and calling something from the object you are currently inside.
+- Global: This usage of 'this' happens when you use just 'this' in the global context and it returns all the attributes and methods of the global DOM
+- New: This usage of 'this' happens when you are creating a new class with a constructor and you're using it to add attirbutes to that class from whatever is passed to is
 
 5. Why do we need super() in an extended class?
 
