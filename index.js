@@ -279,6 +279,7 @@ class CubeMaker extends CuboidMakerTwo {
   surfaceArea() {
     const result = 6 * this.width ** 2;
     return result;
+    console.log("something new for the grader to see");
   }
 }
 
